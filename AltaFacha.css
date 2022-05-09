@@ -1,5 +1,6 @@
 body{
     background-color: rgb(36, 34, 34);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
     background-color: darkred;
@@ -19,11 +20,7 @@ a {
 }
 li {
     
-    padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: darkred;
-    width: 20vw;
-    text-align: center;
+    
 }
 .menu {
     background-color: darkred;
@@ -38,7 +35,10 @@ li {
     color: black;
     padding: 20px; 
     display: block;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: darkred;
+    width: 20vw;
+    text-align: center;
 }
 .menu{
     display: flex;
@@ -48,5 +48,16 @@ li {
 }
 .menu li a:hover{
     background-color: rgb(170, 3, 3);
-    color: pink;
+    color: rgb(235, 11, 48);
+}
+h3{
+    color: darkred;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.news{
+    display: flex;
+    flex-direction: row;
+    
 }
