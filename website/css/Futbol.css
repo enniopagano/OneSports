@@ -16,3 +16,49 @@ a{
     width: 45px;
     height: 45px;
 }
+.column{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    height: auto;
+    background-color: blue;
+    color:yellow;
+    border-radius: 1%;
+}
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: #21f380;
+    padding: 10px;
+    width: 98.5%;
+    column-gap: 2%;
+    height: auto;
+}
+.title{
+    width: 31vw;
+    word-wrap: break-word;
+    margin: auto auto 5% auto;
+    position: relative;
+    top: 1vh;
+    border-radius: 1%;
+}
+h2{
+    margin: 0;
+    background-color: #21f380;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 2vh;
+}
+article{
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    color: black;
+    background-color: white;
+    border-radius: 5%;
+}
+.imagen{
+    width: 100%;
+    margin: 5% 0 3% 0;
+}
