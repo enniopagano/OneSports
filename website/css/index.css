@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(36, 34, 34);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    background-color: darkred;
+    color: black;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
+    font-size: 45px;
+    text-decoration: none;
+}
+.ico{
+    width: 45px;
+    height: 45px;
+}
+h2{
+    font-size: xx-large;
+    text-decoration: none;
+}
+h3{
+    color: darkred;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: darkred;
+    width: 20vw;
+    text-align: center;
+}
+.menu {
+    background-color: darkred;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px; 
+    display: block;
+    
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu li a:hover{
+    background-color: rgb(170, 3, 3);
+    color: rgb(8, 56, 110); 
+}
+/*.news{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: ;
+}*/
+.news{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    height: 30fr;
+    width: 30fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-template-areas:
+    "n1 n2 n3 n4"
+    ;
+    grid-column-gap: 15px;
+}
+.n1{
+    grid-area: "n1";
+    background-color: rgb(8, 56, 110);
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 20px;
+}
+.n2{
+    grid-area: "n2";
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 20px;
+}
+.n3{
+    grid-area: "n3";
+    background-color: rgb(8, 56, 110);
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 20px;
+}
+.n4{
+    grid-area: "n4";
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 20px;
+}
+.img{
+    width: 100%;
+    height: 75%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
