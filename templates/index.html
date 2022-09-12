@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h2>Crear cuenta</h2>
-    <form action="/" method="POST">
-        <label for="name">Nombre: </label>
-        <input type="text" id="name" name="name" /><br>
-        <label for="email">Email: </label>
-        <input type="text" id="email" name="email" /><br>
-        <label for="password">Contraseña: </label>
-        <input type="password" id="password" name="password" /><br>
-        <input type="submit" id="send-signup" name="signup" value="Registrar" />
-    </form>
+    <BODY>
+        <form method="POST" action="">
+            <div>
+            <H1>Enter your details </H1> <br>
+            First Name <input type = "text" name= "nombre" /> <br>
+            contra <input type = "text" name = "contra" /> <br>
+            <input type = "submit">
+            <a href="{{url_for('inicio')}}">Iniciar sesion</a>
+            </div>
+        </form>
 </body>
 </html>
