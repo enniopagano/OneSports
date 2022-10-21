@@ -82,9 +82,14 @@ const countdown = (dateTo, element) => {
 var date = new Date()
 var new_date1 = new Date(date)
 
+var add_hours = Math.floor((2*12)+1);
+var add_days = Math.floor((1*60)+1);
+var add_months = -11
 
+new_date1.setDate(date.getHours() + add_hours);
+new_date1.setDate(date.getDate() + add_days);
+new_date1.setMonth(date.getMonth() + add_months);
 
-
-document.getElementById('new_date1').innerHTML = new_date1;
+/*document.getElementById('new_date1').innerHTML = new_date1;*/
 
 countdown(new_date1, 'countdown1');
