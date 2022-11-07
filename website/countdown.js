@@ -20,9 +20,10 @@ const countdown = (dateTo, element) => {
  
     const timerUpdate = setInterval( () => {
         let currenTime = getTime(dateTo);
-        item.innerHTML = 
-            <div class="row">
-                <div class="col-lg-2">
+        item.innerHTML =`
+            <label id="etiqueta" for="countdown1">CUENTA REGRESIVA A QATAR</label>
+            <div class="flex-container">
+                <div>
                     <div class="countdown-container">
                         <div class="number">
                             ${currenTime.days}
@@ -62,7 +63,7 @@ const countdown = (dateTo, element) => {
                         </div>
                     </div>
                 </div>
-            </div>;
+            </div>`;
  
         if (currenTime.time <= 1) {
             clearInterval(timerUpdate);
@@ -71,3 +72,15 @@ const countdown = (dateTo, element) => {
  
     }, 1000);
 };
+
+var date = new Date()
+var new_date1 = new Date(date)
+
+new_date1.setMinutes(date.getMinutes() + 20);
+new_date1.setHours(date.getHours() + 13);
+new_date1.setDate(date.getDate() + 16);
+
+
+/*document.getElementById('new_date1').innerHTML = new_date1;*/
+
+countdown(new_date1, 'countdown1');
