@@ -1,3 +1,4 @@
+
 body{
     background-color: rgb(36, 34, 34);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -26,15 +27,14 @@ a {
     color: black;
 }
 li {
-    
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: darkred;
+    background: rgb(99, 5, 5);
     width: 20vw;
     text-align: center;
 }
 .menu {
-    background-color: darkred;
+    background-color: rgb(99, 5, 5);
     list-style: none;
     padding: 0;
     width: 100%;
@@ -56,7 +56,7 @@ li {
 }
 .menu li a:hover{
     background-color: rgb(170, 3, 3);
-    color: rgb(8, 56, 110); 
+    color: rgb(99, 5, 5); 
 }
 /*.news{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -77,7 +77,7 @@ li {
 }
 .n1{
     grid-area: "n1";
-    background-color: rgb(8, 56, 110);
+    background-color: rgb(99, 5, 5);
     border-radius: 10px;
     padding: 10%;
     font-size: 20px;
@@ -91,7 +91,7 @@ li {
 }
 .n3{
     grid-area: "n3";
-    background-color: rgb(8, 56, 110);
+    background-color: rgb(99, 5, 5);
     border-radius: 10px;
     padding: 10%;
     font-size: 20px;
@@ -108,4 +108,45 @@ li {
     height: 75%;
     border-radius: 15px;
     margin-top: 10px;
+}
+#etiqueta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.countdown-container {
+    padding: 20px;
+    background-color: #222222;
+    margin-bottom: 0px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+ 
+.countdown-container .number {
+    font-size: 42px;
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: darkred;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+ 
+.countdown-container .concept {
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+
 }

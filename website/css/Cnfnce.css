@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(36, 34, 34);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+.icono{
+    width: 60px;
+    height: 60px;
+}
+#title{
+    background-color: darkred;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
+    font-size: 55px;
+}
+h1{
+    background-color: darkred;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
+    font-size: 45px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "r1 t r1"
+    ;
+}
+table{
+    width:720px;
+    margin:0 auto;
+    color:white;
+    text-align:center;
+}
+.ico{
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+}
+#okc{
+    height: 40px;
+    width: 50px;
+}
+#nyk{
+    height: 40px;
+    width: 50px;
+}
+#tabla{
+    border: 1px solid black;
+}
+tr{
+    cursor:pointer;
+}
+.destacado{
+    font-weight:bold;
+}
+  table tr:nth-child(odd){
+    background-color:black;
+}
+  
+table tr:nth-child(odd):hover{
+    color:black;
+    background-color:darkred;
+}
+table tr:nth-child(even){
+    background-color:rgb(20, 20, 20);
+}
+  
+table tr:nth-child(even):hover{
+    color:black;
+    background-color:darkred;
+}
+.r1{
+    grid-area: "r1";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90%;
+}
+.match{
+    background-color: darkred;
+    border-radius: 10px;
+    height: 140px;
+    width: 240px;
+    padding: 5%;
+    text-align: center;
+    border: solid;
+}
+.header{
+    border: solid;
+    text-align: center;
+}
+.resul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 34, 34);
+    border: 1px solid black;
+    color: white;
+}
