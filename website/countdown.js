@@ -84,3 +84,16 @@ new_date1.setDate(date.getDate() + 16);
 /*document.getElementById('new_date1').innerHTML = new_date1;*/
 
 countdown(new_date1, 'countdown1');
+
+
+
+//Local Storage
+let menu = document.getElementById("menu1");
+let verificador = localStorage.getItem("sesion");
+if (verificador == "true"){
+    let ambulancia = document.createElement("li");
+    menu.innerHTML = `<li><a href="./pages/Ambulancia.html"><img src="./resources/UFC.png" alt="UFC Logo"> Ambulancia</a></li>`
+    menu.appendChild(ambulancia);
+}else{
+    ambulancia.innerHTML = "Inicie de sesion para desbloquear esta funcionalidad"
+}
