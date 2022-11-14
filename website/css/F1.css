@@ -96,6 +96,9 @@ table tr:nth-child(even):hover{
     overflow: auto;
     padding-bottom: 10px;
 }
-  
+footer{
+    color: white;
+    text-align: center;
+}
   
   

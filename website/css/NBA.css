@@ -69,19 +69,7 @@ a{
     width: 145px;
     height: 95px;
 }
-/* .WC:hover{
-    animation-duration: 1s;
-    animation-name: slidein;
+footer{
+    color: white;
+    text-align: center;
 }
-@keyframes slidein {
-    from {
-      margin-bottom: 0%;
-      width: 100%
-    }
-  
-    to {
-      margin-bottom: 100%;
-      width: 100%;
-    }
-  } */
-

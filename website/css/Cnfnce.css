@@ -104,3 +104,7 @@ table tr:nth-child(even):hover{
     border: 1px solid black;
     color: white;
 }
+footer{
+    color: white;
+    text-align: center;
+}
