@@ -21,7 +21,6 @@ const countdown = (dateTo, element) => {
     const timerUpdate = setInterval( () => {
         let currenTime = getTime(dateTo);
         item.innerHTML =`
-            <label id="etiqueta" for="countdown1">CUENTA REGRESIVA A QATAR</label>
             <div class="flex-container">
                 <div>
                     <div class="countdown-container">
@@ -76,9 +75,9 @@ const countdown = (dateTo, element) => {
 var date = new Date()
 var new_date1 = new Date(date)
 
-new_date1.setMinutes(date.getMinutes() + 20);
-new_date1.setHours(date.getHours() + 13);
-new_date1.setDate(date.getDate() + 16);
+// new_date1.setMinutes(date.getMinutes() + 2);
+// new_date1.setHours(date.getHours() + 43);
+// new_date1.setDate(date.getDate() + 8);
 
 
 /*document.getElementById('new_date1').innerHTML = new_date1;*/
@@ -88,12 +87,13 @@ countdown(new_date1, 'countdown1');
 
 
 //Local Storage
-let menu = document.getElementById("menu1");
+let cuenta = localStorage.setItem("minutos", new_date1.setMinutes(date.getMinutes() + 2)),
+    cuenta2 = localStorage.setItem("horas", new_date1.setHours(date.getHours() + 2)),
+    cuenta3 = localStorage.setItem("dias", new_date1.setDate(date.getDate() + 6));
+    
+let ambulanceButton = document.getElementById("ambulance");
 let verificador = localStorage.getItem("sesion");
-if (verificador == "true"){
-    let ambulancia = document.createElement("li");
-    menu.innerHTML = `<li><a href="./pages/Ambulancia.html"><img src="./resources/UFC.png" alt="UFC Logo"> Ambulancia</a></li>`
-    menu.appendChild(ambulancia);
-}else{
-    ambulancia.innerHTML = "Inicie de sesion para desbloquear esta funcionalidad"
+if (verificador == true){
+    ambulanceButton.innerHTML=`<button id="ambulance" class="button">Ambulancia</button>`
+    
 }
