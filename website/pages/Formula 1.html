@@ -5,24 +5,994 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formula 1</title>
-    <link rel="icon" href="/Imagenes picadas/favicon.ico">
+    <link rel="icon" href="/resources/favindex.ico">
     <link rel="stylesheet" href="/css/F1.css">
 </head>
 <body>
     <header>
-        <h1><a href="/index.html "><img src="/Imagenes picadas/UNDEPORTE.png" alt="Icono" class="ico">OneSports</a></h1>
+        <h1><a href="/index.html "><img src="/resources/UNDEPORTE.png" alt="Icono" class="ico">OneSports</a></h1>
     </header>
     <main>
-        <section>
-            <nav class="season">
-                <ul>
-                    <li class="GP_b">GP Baréin</li> 
-                    <li class="GP_as">GP Arabia Saudita</li>
-                    <li class="GP_a">GP Australia</li>
-                    <li class="GP_er">GP Emilia Romaña</li>
-                    <li class="GP_m">GP Miami</li>
-                </ul>
-            </nav>
+        <section class="flex-container">
+            <div class="GP">
+                <h2 class="title">Gran Premio de Baréin</h2>
+                <div class="content">
+                    <div class="table-wrapper">
+                        <table id="tabla" cellspacing="0" cellpadding="0">
+                            <tr class="destacado">
+                                <td>Pos</td>
+                                <td>Piloto</td>
+                                <td>Escuderia</td>
+                                <td>Tiempo</td>
+                                <td>Pts</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>C. Leclerc</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>1:37:33.584</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>C. Sainz</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>+5.598s</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>L. Hamilton</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+9.675s</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>G. Russell</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+11.211s</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>K. Magnussen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+14.754s</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>V. Bottas</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+16.119s</td>
+                                <td>8</td>
+                            </tr><tr>
+                                <td>7</td>
+                                <td>E. Ocon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+19.423s</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Y. Tsunoda</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+20.386s</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>F. Alonso</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+22.390s</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>G. Zhou</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+23.063s</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>M. Schumacher</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+32.675s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>L. Stroll</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+45.873s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>A. Albon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+45.873s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>D. Ricciardo</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+53.335s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>L. Norris</td>
+                                 <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+54.975s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>N. Latifi</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+61.795s</td>
+                                <td>0</td>
+                            </tr><tr>
+                                <td>17</td>
+                                <td>N. Hulkenberg</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+63.478s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>S. Pérez</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>M. Verstappen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>P. Gasly</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <p class="info"><label class="title-info">Vuelta más rápida:</label> Charles Leclerc <br>
+                        <label class="title-info">Tiempo:</label> 1:34:570 en la vuelta 51 <br><br>
+                        <label class="title-info">Pole:</label> Charles Leclerc <br>
+                        <label class="title-info">Tiempo:</label> 1.30.558 <br>
+                        <label class="title-info">2° en la Parrilla:</label> Max Verstappen <br>
+                        <label class="title-info">3° en la Parrilla:</label> Carlos Sainz
+                        </p>
+                    </div>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/6hYuOmaEzC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="GP">
+                <h2 class="title">Gran Premio de Arabia Saudita</h2>
+                <div class="content">
+                    <div class="table-wrapper">
+                        <table id="tabla" cellspacing="0" cellpadding="0">
+                            <tr class="destacado">
+                                <td>Pos</td>
+                                <td>Piloto</td>
+                                <td>Escuderia</td>
+                                <td>Tiempo</td>
+                                <td>Pts</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>M. Verstappen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>1:24:19.293</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>C. Leclerc</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>+0.549s</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>C. Sainz</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>+8.097s</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>S. Pérez</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>+10.800s</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>G. Russell</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+32.732s</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>E. Ocon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+56.017s</td>
+                                <td>8</td>
+                            </tr><tr>
+                                <td>7</td>
+                                <td>L. Norris</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+56.124s</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>P. Gasly</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+1:02.946s</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>K. Magnussen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+1:04.308s</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>L. Hamilton</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+1:13.948s</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>G. Zhou</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+1:22.215s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>N. Hülkenberg</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+1:31.742s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>L. Stroll</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>A. Albon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+3 vueltas</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>V. Bottas</td>
+                                 <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>F. Alonso</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr><tr>
+                                <td>17</td>
+                                <td>D. Ricciardo</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>N. Latifi</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Y. Tsunoda</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <p class="info"><label class="title-info">Vuelta más rápida:</label> Charles Leclerc <br>
+                        <label class="title-info">Tiempo:</label> 1:31:634 en la vuelta 48 <br><br>
+                        <label class="title-info">Pole:</label> Sergio Pérez <br>
+                        <label class="title-info">Tiempo:</label> 1.28.200 <br>
+                        <label class="title-info">2° en la Parrilla:</label> Charles Leclerc <br>
+                        <label class="title-info">3° en la Parrilla:</label> Carlos Sainz
+                        </p>
+                    </div>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/gIlLCWfNgoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="GP">
+                <h2 class="title">Gran Premio de Australia</h2>
+                <div class="content">
+                    <div class="table-wrapper">
+                        <table id="tabla" cellspacing="0" cellpadding="0">
+                            <tr class="destacado">
+                                <td>Pos</td>
+                                <td>Piloto</td>
+                                <td>Escuderia</td>
+                                <td>Tiempo</td>
+                                <td>Pts</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>C. Leclerc</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>1:27:46.548</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>S. Pérez</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>+20.524s</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>G. Russell</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+25.593s</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>L. Hamilton</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+28.543s</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>L. Norris</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+53.303s</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>D. Ricciardo</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+53.737s</td>
+                                <td>8</td>
+                            </tr><tr>
+                                <td>7</td>
+                                <td>E. Ocon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+61.683s</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>V. Bottas</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+68.439s</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>P. Gasly</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+76.221s</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>A. Albon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+79.382s</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>G. Zhou</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+81.695s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>L. Stroll</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+88.598s</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>M. Schumacher</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>K. Magnussen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Y. Tsunoda</td>
+                                 <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>N. Latifi</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr><tr>
+                                <td>17</td>
+                                <td>F. Alonso</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>M. Verstappen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>S. Vettel</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>C. Sainz</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <p class="info"><label class="title-info">Vuelta más rápida:</label> Charles Leclerc <br>
+                        <label class="title-info">Tiempo:</label> 1:20:260 en la vuelta 58 <br><br>
+                        <label class="title-info">Pole:</label> Charles Leclerc <br>
+                        <label class="title-info">Tiempo:</label> 1.17.868 <br>
+                        <label class="title-info">2° en la Parrilla:</label> Max Verstappen <br>
+                        <label class="title-info">3° en la Parrilla:</label> Sergio Pérez
+                        </p>
+                    </div>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/X7AUGe5HKmQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="GP">
+                <h2 class="title">Gran Premio de Emilia Romaña</h2>
+                <div class="content">
+                    <div class="table-wrapper">
+                        <table id="tabla" cellspacing="0" cellpadding="0">
+                            <tr class="destacado">
+                                <td>Pos</td>
+                                <td>Piloto</td>
+                                <td>Escuderia</td>
+                                <td>Tiempo</td>
+                                <td>Pts</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>M. Verstappen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>1:32:07.986</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>S. Pérez</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>+16.527s</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>L. Norris</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+34.834s</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>G. Russell</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+42.506s</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>V. Bottas</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+43.181s</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>C. Leclerc</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>+53.737s</td>
+                                <td>8</td>
+                            </tr><tr>
+                                <td>7</td>
+                                <td>Y. Tsunoda</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+56.027s</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>S. Vettel</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+70.829s</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>K. Magnussen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+76.651s</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>L. Stroll</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+1 vuelta</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>A. Albon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>P. Gasly</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>L. Hamilton</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>E. Ocon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>G. Zhou</td>
+                                 <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>N. Latifi</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr><tr>
+                                <td>17</td>
+                                <td>M. Schumacher</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>D. Ricciardo</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>F. Alonso</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>C. Sainz</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <p class="info"><label class="title-info">Vuelta más rápida:</label> Max Verstappen <br>
+                        <label class="title-info">Tiempo:</label> 1:18.446 en la vuelta 55 <br><br>
+                        <label class="title-info">Pole:</label> Max Verstappen <br>
+                        <label class="title-info">Tiempo:</label> Carrera de Sprint<br>
+                        <label class="title-info">2° en la Parrilla:</label> Charles Leclerc <br>
+                        <label class="title-info">3° en la Parrilla:</label> Sergio Pérez
+                        </p>
+                    </div>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/ZHnEr55-vmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="GP">
+                <h2 class="title">Gran Premio de Miami</h2>
+                <div class="content">
+                    <div class="table-wrapper">
+                        <table id="tabla" cellspacing="0" cellpadding="0">
+                            <tr class="destacado">
+                                <td>Pos</td>
+                                <td>Piloto</td>
+                                <td>Escuderia</td>
+                                <td>Tiempo</td>
+                                <td>Pts</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>M. Verstappen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>1:34:24.258</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>C. Leclerc</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>+3.786s</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>C. Sainz</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>+8.229s</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>S. Pérez</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>+10.638s</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>G. Russell</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+18.582</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>L. Hamilton</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+21.368s</td>
+                                <td>8</td>
+                            </tr><tr>
+                                <td>7</td>
+                                <td>V. Bottas</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+25.073s</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>E. Ocon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+28.386</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>A. Albon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+32.365s</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>L. Stroll</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+37.026</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>F. Alonso</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+37.128</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Y. Tsunoda</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+40.146</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>D. Ricciardo</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+40.902</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>N. Latifi</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+48.836</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>M. Schumacher</td>
+                                 <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+73.705</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>K. Magnussen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>S. Vettel</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">AstonMartin</td>
+                                <td>+3 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>P. Gasly</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">AlphaTauri</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>L. Norris</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>G. Zhou</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <p class="info"><label class="title-info">Vuelta más rápida:</label> Max Verstappen <br>
+                        <label class="title-info">Tiempo:</label> 1:31.361 en la vuelta 54 <br><br>
+                        <label class="title-info">Pole:</label> Charles Leclerc <br>
+                        <label class="title-info">Tiempo:</label> 1:28.796<br>
+                        <label class="title-info">2° en la Parrilla:</label> Carlos Sainz <br>
+                        <label class="title-info">3° en la Parrilla:</label> Max Verstappen
+                        </p>
+                    </div>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/mFso1mpZR1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="GP">
+                <h2 class="title">Gran Premio de España</h2>
+                <div class="content">
+                    <div class="table-wrapper">
+                        <table id="tabla" cellspacing="0" cellpadding="0">
+                            <tr class="destacado">
+                                <td>Pos</td>
+                                <td>Piloto</td>
+                                <td>Escuderia</td>
+                                <td>Tiempo</td>
+                                <td>Pts</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>M. Verstappen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>1:37:20.475</td>
+                                <td>26</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>S. Pérez</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Redbull.png">Red Bull</td>
+                                <td>+13.072s</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>R. Russell</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+32.927s</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>C. Sainz</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>+45.208s</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>L. Hamilton</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Mercedes.png">Mercedes</td>
+                                <td>+54.534</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>V. Bottas</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>+59.976s</td>
+                                <td>8</td>
+                            </tr><tr>
+                                <td>7</td>
+                                <td>E. Ocon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+75.397s</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>L. Norris</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+83.341</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>F. Alonso</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Alpine.png">Alpine</td>
+                                <td>+1 vuelta</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Y. Tsunoda</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+37.026</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>S. Vettel</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+37.128</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>D. Ricciardo</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/McLaren.png">McLaren</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>P. Gasly</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlphaTauri.png">Alpha Tauri</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>M. Schumacher</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Williams</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>L. Stroll</td>
+                                 <td class="escu"><img class="esc" src="/resources/F1_T/AstonMartin.png">Aston Martin</td>
+                                <td>+1 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>N. Latifi</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>+2 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>K. Magnussen</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Haas.png">Haas</td>
+                                <td>+2 vuelta</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>A. Albon</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Williams.png">Williams</td>
+                                <td>NT</td>
+                                <td>+2 vueltas</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>G. Zhou</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/AlfaRomeo.png">Alfa Romeo</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>C. Leclerc</td>
+                                <td class="escu"><img class="esc" src="/resources/F1_T/Ferrari.png">Ferrari</td>
+                                <td>NT</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <p class="info"><label class="title-info">Vuelta más rápida:</label> Sergio Pérez <br>
+                        <label class="title-info">Tiempo:</label> 1:24.108 en la vuelta 55 <br><br>
+                        <label class="title-info">Pole:</label> Charles Leclerc <br>
+                        <label class="title-info">Tiempo:</label> 1:18.750<br>
+                        <label class="title-info">2° en la Parrilla:</label> Max Verstappen <br>
+                        <label class="title-info">3° en la Parrilla:</label> Carlos Sainz
+                        </p>
+                    </div>
+                    <iframe width="350" height="200" src="https://www.youtube.com/embed/jqdt8-WySdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
         </section>
     </main>
 </body>
