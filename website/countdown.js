@@ -75,12 +75,6 @@ const countdown = (dateTo, element) => {
 var date = new Date()
 var new_date1 = new Date(date)
 
-// new_date1.setMinutes(date.getMinutes() + 2);
-// new_date1.setHours(date.getHours() + 43);
-// new_date1.setDate(date.getDate() + 8);
-
-
-/*document.getElementById('new_date1').innerHTML = new_date1;*/
 
 countdown(new_date1, 'countdown1');
 
@@ -95,5 +89,4 @@ let ambulanceButton = document.getElementById("ambulance");
 let verificador = localStorage.getItem("sesion");
 if (verificador == true){
     ambulanceButton.innerHTML=`<button id="ambulance" class="button">Ambulancia</button>`
-    
 }
