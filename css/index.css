@@ -1,0 +1,188 @@
+
+body{
+    background-color: rgb(36, 34, 34);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.flex-index{
+    background-color: darkred;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.index-item{
+    width: 21vw;
+}
+#IdS{
+    text-align: end;
+    padding-right: 15px;
+}
+#IdS:hover{
+    text-decoration: underline;
+    color: rgb(99, 5, 5);
+}
+h1{
+    background-color: darkred;
+    color: black;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif   ;
+    font-size: 45px;
+    text-decoration: none;
+}
+.ico{
+    width: 55px;
+    height: 55px;
+}
+h2{
+    font-size: xx-large;
+    text-decoration: none;
+}
+h3{
+    color: darkred;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(99, 5, 5);
+    width: 20vw;
+    text-align: center;
+}
+.menu {
+    background-color: rgb(99, 5, 5);
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 20px; 
+    display: block;
+    
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu li a:hover{
+    background-color: rgb(170, 3, 3);
+    color: rgb(99, 5, 5); 
+}
+/*.news{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: ;
+}*/
+.news{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    height: 30fr;
+    width: 30fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-template-areas:
+    "n1 n2 n3 n4"
+    ;
+    grid-column-gap: 15px;
+}
+.n1{
+    grid-area: "n1";
+    background-color: rgb(99, 5, 5);
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 20px;
+}
+.n2{
+    grid-area: "n2";
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 20px;
+}
+.n3{
+    grid-area: "n3";
+    background-color: rgb(99, 5, 5);
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 20px;
+}
+.n4{
+    grid-area: "n4";
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 10%;
+    font-size: 20px;
+}
+.img{
+    width: 100%;
+    height: 75%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+#etiqueta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.countdown-container {
+    padding: 20px;
+    background-color: #222222;
+    margin-bottom: 0px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+ 
+.countdown-container .number {
+    font-size: 42px;
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: darkred;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+ 
+.countdown-container .concept {
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.button{
+    height: 5vw;
+    width: 15vw;
+    font-size: 15px;
+    background-color: darkred;
+    border: 3px solid rgb(36, 34, 34);
+    border-radius: 10px;
+}
+footer{
+    color: white;
+    text-align: center;
+}

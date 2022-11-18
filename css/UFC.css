@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(36, 34, 34);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    background-color: rgb(199, 193, 193);
+    text-align: center;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.ico{
+    width: 45px;
+    height: 45px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    background-color: rgb(199, 193, 193);
+    height: 400px;
+    width: 98%;
+    margin: auto;
+    border-radius: 5px;
+}
+.title{
+    background-color: rgb(10, 10, 10);
+    color: rgb(199, 193, 193);
+    text-align: center;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.background{
+    height: 400px;
+    color: rgb(252, 252, 252);
+    font-family: "Bebas Neue", serif;
+    font-size: 80px;
+    background-image: url(https://dmxg5wxfqgb4u.cloudfront.net/styles/background_image_lg/s3/2022-11/111222-pereira-campeon-ufc-281.jpg?h=5e08a8b6&itok=gPIs0mzX);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.back-title{
+    text-align: center;
+}
+#champ{
+    color: rgb(226, 193, 2);
+}
+.back-content{
+    font-size: 40px;
+    margin-left: 10%;
+    text-align: center;
+    margin-right: 10%;
+}
+@media (max-width: 400px){
+    .back-content{
+        visibility: hidden;
+    }
+}
+.prox{
+    color: rgb(199, 193, 193);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+.next{
+    font-family: "Bebas Neue", serif;
+    height: 200px;
+    margin-top: 25px;
+    background-image: url(https://dmxg5wxfqgb4u.cloudfront.net/styles/background_image_sm/s3/image/2022-10/111922-ufc-fight-night-lewis-vs-spivac-SG-hero.jpg?h=d1cb525d&itok=TD4AqWGK);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+.next-title{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+.next-content{
+    text-align: center;
+    font-size: 30px;
+}
+.rankings{
+    color: rgb(199, 193, 193);
+    margin-top: 15px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "bebas neue", serif;
+}
+.rank-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.rank{
+    padding-top: 45px;
+}
+table{
+    width:420px;
+    height: 10px;
+    margin-left: 20px;
+    color:white;
+    text-align:center;
+}
+#tabla{
+    width: 250px;
+}
+td{
+    padding: 5px;
+}
+.destacado{
+    font-weight:bold;
+    border: 2px solid black;
+}
+.rank-title{
+    color: rgb(161, 10, 10);
+    font-family: "Bebas neue", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.champ{
+    opacity: 0.2;
+}
+footer{
+    color: white;
+    text-align: center;
+}
