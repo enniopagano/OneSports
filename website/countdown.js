@@ -87,6 +87,7 @@ let cuenta = localStorage.setItem("minutos", new_date1.setMinutes(date.getMinute
     
 let ambulanceButton = document.getElementById("ambulance");
 let verificador = localStorage.getItem("sesion");
-if (verificador == true){
-    ambulanceButton.innerHTML=`<button id="ambulance" class="button">Ambulancia</button>`
+if (verificador == "true"){
+    ambulanceButton.innerHTML=`<button id="ambulance" class="button"><a href="./pages/Ambulancia.html">Ambulancia</a>
+    </button>`
 }
