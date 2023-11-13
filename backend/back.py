@@ -39,7 +39,6 @@ def guardar_dato():
 
     query = "INSERT INTO usuarios (nick, rol, nombre, apellido, correo) VALUES (%s, %s, %s, %s, %s)"
 
-    # data_id = cursor.lastrowid
     user_nick = data.get("nick")
     user_rol = data.get("rol")
     user_nombre = data.get("nombre")
@@ -71,7 +70,7 @@ def guardar_dato():
 def obtener_usuarios():
     conexion = conexion_db()
     cursor = conexion.cursor()
-    cursor.execute("SELECT * FROM datos")
+    cursor.execute("SELECT * FROM usuarios")
     result = cursor.fetchall()
     cursor.close()
     return jsonify(result)
