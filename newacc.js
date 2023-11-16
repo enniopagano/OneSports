@@ -1,16 +1,20 @@
 let API = "http://127.0.0.1:5000";
 let boton = document.getElementById("boton_submit");
 let usuario = document.getElementById("user");
-let contraseña = document.getElementById("contraseña");
+let contrasena = document.getElementById("contraseña");
+let correo = document.getElementById("correo");
 let mensaje = document.getElementById("mensaje");
-contraseña.addEventListener("change",(e)=>{
+contrasena.addEventListener("change",(e)=>{
   contra = e.target.value;
   console.log(contra)
-
 })
 usuario.addEventListener("change",(e)=>{
   nombre = e.target.value;
   console.log(usuario)
+})
+correo.addEventListener("change",(e)=>{
+  correo = e.target.value;
+  console.log(correo)
 }) 
 boton.addEventListener("click",async function  handle_submit(e) {
   e.preventDefault();
@@ -20,24 +24,25 @@ boton.addEventListener("click",async function  handle_submit(e) {
   },
   body: JSON.stringify ({
     nombre,
-    contra
+    contra,
+    correo
   })
   })
   
   const data = await respuesta.json();
   console.log(data);
   console.log(data.sesion);
-  if (data.cuenta =="existente") {
-    let mensaje1 = data.mensaje;
+  if (data.nombre == "existe") {
     localStorage.setItem('sesion', "false");
 
+    mensaje_existe = "Ese nombre de usuario ya existe, por favor elija otro"
     console.log(mensaje1);
-    mensaje.innerHTML = mensaje1
+    mensaje.innerHTML = mensaje_existe
 
-  }else{
+  } else {
     let mensaje1 = data.mensaje;
     let usernameToJson = JSON.stringify(data);
-    console.log("mi nombre es:"+data.nombre);
+    console.log("mi nombre es:" + data.nombre);
     localStorage.setItem('sesion', "true");
     localStorage.setItem('nombre', data.nombre)
     mensaje.innerHTML = mensaje1

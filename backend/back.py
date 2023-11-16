@@ -30,39 +30,36 @@ def consultar(query, values = None):
         conexion.close()
 
 
-@app.route('/api/usuarios', methods=['POST'])
+@app.route('/crear', methods=['POST'])
 def guardar_dato():
     conexion = conexion_db()
     print("de pana")
     data = request.get_json()  # Obtén los datos JSON de la solicitud
     cursor = conexion.cursor()
 
-    query = "INSERT INTO usuarios (nick, rol, nombre, apellido, correo) VALUES (%s, %s, %s, %s, %s)"
+    query = "INSERT INTO usuarios (nick, contrasena, correo) VALUES (%s, %s, %s)"
 
     user_nick = data.get("nick")
-    user_rol = data.get("rol")
-    user_nombre = data.get("nombre")
-    user_apellido = data.get("apellido")
+    user_contrasena = data.get("contrasena")
     user_correo = data.get("correo")
 
-    valores = (user_nick, user_rol, user_nombre, user_apellido, user_correo)
+    valores = (user_nick, user_contrasena, user_correo)
 
-    consultar(query, valores)
-    
+    consulta_comprobante = "SELECT EXISTS(SELECT 1 FROM usuarios WHERE nick = %s)"
+
+    cursor.execute(consulta_comprobante, (user_nick,))
+    comprobante = cursor.fetchone()
+
+    if comprobante[0]:
+        print("El nombre de usuario " + user_nick + " ya existe")
+        return msg = {
+            "nombre" : "existe"
+        }
+    else:
+        consultar(query, valores)
+        print("Usuario creado")
+
     return jsonify(valores)
-    # Verifica que se hayan proporcionado los campos necesarios en los datos JSON
-    # if 'campo1' in data and 'campo2' in data:
-    #     cursor = conexion.cursor()
-    #     insert_query = "INSERT INTO datos (id, dato) VALUES (%s, %s)"
-    #     values = (data['campo1'], data['campo2'])
-
-    #     cursor.execute(insert_query, values)
-    #     conexion.commit()
-    #     cursor.close()
-
-    #     return jsonify({"mensaje": "Dato guardado con éxito"})
-
-    # return jsonify({"error": "Faltan campos en los datos JSON"}), 400
 
 
 # Ruta para consultar usuarios en la base de datos

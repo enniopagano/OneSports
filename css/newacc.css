@@ -71,7 +71,7 @@ body {
 
 #login input::placeholder {
     font-family: 'Overpass', sans-serif;
-    color: #E4E4E4;
+    color: #302d2d86;
 }
 
 #login button {
