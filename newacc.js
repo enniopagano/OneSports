@@ -1,4 +1,4 @@
-let API = "http://127.0.0.1:5000";
+let API = "http://192.168.44.118:3306";
 let boton = document.getElementById("boton_submit");
 let usuario = document.getElementById("user");
 let contrasena = document.getElementById("contraseña");

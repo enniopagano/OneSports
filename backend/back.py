@@ -52,14 +52,20 @@ def guardar_dato():
 
     if comprobante[0]:
         print("El nombre de usuario " + user_nick + " ya existe")
-        return msg = {
+        msg = {
             "nombre" : "existe"
         }
+        return msg
     else:
         consultar(query, valores)
         print("Usuario creado")
+        msg = {
+            "nombre" : user_nick
 
-    return jsonify(valores)
+        }
+        return msg 
+
+    # return jsonify(valores)
 
 
 # Ruta para consultar usuarios en la base de datos

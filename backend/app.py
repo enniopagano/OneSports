@@ -58,7 +58,6 @@ def Inicio_sesion():
                 ).first()
 
     if consulta != None and consulta1 !=None:
-        print("funciono")
         response = str(consulta.nombre)
         print(type(response))
         print(response)
@@ -86,9 +85,8 @@ def createUser():
         print(request.json)
         sesion1.add(User(nombre = request.json["nombre"], contra = request.json["contra"]))
         sesion1.commit()
-        print("posta0")
         msg = {
-            "mensaje":"cuenta creada",
+            "mensaje":"cuenta creada", 
             "cuenta":"nueva"
         }
         return msg
