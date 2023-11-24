@@ -29,25 +29,44 @@ def consultar(query, values = None):
     finally:
         conexion.close()
 
+@app.route(/'login', methods = ['GET', 'POST'])
+def login():
+    data = request.get_json()
 
-@app.route('/crear', methods=['POST'])
+    user_nick = data.get("nick")
+    user_contrasena = data.get("contra")
+
+    consulta_nombre = "SELECT EXISTS(SELECT 1 FROM usuarios WHERE nick = %s)"
+    consultar_nick = consultar(consulta_nombre, (user_nick,))
+
+    consulta_contrasena = "SELECT EXISTS(SELECT 1 FROM usuarios WHERE contrasena = %s)"
+    consultar_contra = consultar(consulta_contrasena, (user_contrasena,))
+
+    if consultar_nick[0] and consultar_contra[0] != None:
+        msg = {
+            "sesion" : "true"
+            "nombre" : user_nick
+            "mensaje" : "sesion iniciada"
+        }
+
+@app.route('/crear', methods=['POST', 'GET'])
 def guardar_dato():
     conexion = conexion_db()
     print("de pana")
     data = request.get_json()  # Obtén los datos JSON de la solicitud
     cursor = conexion.cursor()
 
-    query = "INSERT INTO usuarios (nick, contrasena, correo) VALUES (%s, %s, %s)"
+    consulta_post = "INSERT INTO usuarios (nick, contrasena, correo) VALUES (%s, %s, %s)"
 
     user_nick = data.get("nick")
-    user_contrasena = data.get("contrasena")
+    user_contrasena = data.get("contra")
     user_correo = data.get("correo")
 
     valores = (user_nick, user_contrasena, user_correo)
 
     consulta_comprobante = "SELECT EXISTS(SELECT 1 FROM usuarios WHERE nick = %s)"
 
-    cursor.execute(consulta_comprobante, (user_nick,))
+    consultar(consulta_comprobante, (user_nick,))
     comprobante = cursor.fetchone()
 
     if comprobante[0]:
@@ -61,7 +80,6 @@ def guardar_dato():
         print("Usuario creado")
         msg = {
             "nombre" : user_nick
-
         }
         return msg 
 
